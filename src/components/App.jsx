@@ -1,16 +1,15 @@
+import React from "react-dom";
+import { Box, BoxWave, Wave } from "./MainLoader.styled";
+// import { Box, BoxWave, Wave } from "./MainLoader.styled";
+
 export const App = () => {
+  const waveElements = Array.from({ length: 20 }, (_, index) => (
+    <Wave key={index} />
+  ));
+
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101',
-      }}
-    >
-      create-react
-    </div>
+    <Box>
+      <BoxWave>{waveElements}</BoxWave>
+    </Box>
   );
 };
