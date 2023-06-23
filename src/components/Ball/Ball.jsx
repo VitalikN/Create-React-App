@@ -1,16 +1,16 @@
-import { Ball, Box, Shadow } from "./Ball.styled";
+import { Container, Ball, Box, Shadow } from "./Ball.styled";
 
 export const Balls = () => {
   return (
-    <Box>
-      <div>
+    <Container>
+      <Box>
         <Ball></Ball>
         <Ball></Ball>
         <Ball></Ball>
         <Shadow></Shadow>
         <Shadow></Shadow>
         <Shadow></Shadow>
-      </div>
-    </Box>
+      </Box>
+    </Container>
   );
 };

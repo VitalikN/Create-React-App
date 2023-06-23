@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 /***
  * Ball loader
  */
-export const Box = styled.div`
+export const Container = styled.div`
   position: fixed;
   top: 0;
   right: 0;
@@ -18,9 +18,14 @@ export const Box = styled.div`
   );
 `;
 
+export const Box = styled.div`
+  position: relative;
+  width: 320px;
+  height: 200px;
+`;
 export const Ball = styled.div`
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   position: absolute;
   left: 15%;
@@ -35,7 +40,7 @@ export const Ball = styled.div`
     }
 
     40% {
-      height: 40px;
+      height: 30px;
       border-radius: 50%;
       transform: scaleX(1);
       background-color: #fdff00ff;
@@ -58,7 +63,7 @@ export const Ball = styled.div`
 `;
 
 export const Shadow = styled.div`
-  width: 40px;
+  width: 30px;
   height: 4px;
   border-radius: 50%;
   position: absolute;
