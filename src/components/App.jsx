@@ -1,15 +1,14 @@
 import React from "react-dom";
-import { Box, BoxWave, Wave } from "./MainLoader.styled";
-// import { Box, BoxWave, Wave } from "./MainLoader.styled";
+import { Spinner } from "./spinner/Spinner";
+// import { MainLoader } from "./MainLoader/MainLoader";
+// import { Balls } from "./Ball/Ball";
 
 export const App = () => {
-  const waveElements = Array.from({ length: 20 }, (_, index) => (
-    <Wave key={index} />
-  ));
-
   return (
-    <Box>
-      <BoxWave>{waveElements}</BoxWave>
-    </Box>
+    <>
+      {/* <Balls /> */}
+      <Spinner />
+      {/* <MainLoader /> */}
+    </>
   );
 };
